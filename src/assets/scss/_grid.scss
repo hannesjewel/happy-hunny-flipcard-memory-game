@@ -1,0 +1,75 @@
+._grid{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    ._column{
+        width: 100%;
+    }
+    &._grid-2{
+        @media(min-width: $tablet){
+            ._column{
+                width: calc(50% - 15px);
+            }
+        }
+        @media(min-width: $laptop){
+            ._column{
+                width: calc(50% - 20px);
+            }
+        }
+    }
+    &._grid-3{
+        @media(min-width: $tablet){
+            ._column{
+                width: calc(50% - 15px);
+            }
+        }
+        @media(min-width: $laptop){
+            ._column{
+                width: calc(33.33% - 30px);
+            }
+        }
+    }
+    &._grid-4{
+        @media(min-width: $tablet){
+            ._column{
+                width: calc(50% - 15px);
+            }
+        }
+        @media(min-width: $laptop){
+            ._column{
+                width: calc(25% - 30px);
+            }
+        }
+    }
+    &._grid-3-1{
+        
+        @media(min-width: $laptop){
+            ._column{
+                &:first-child{
+                    width: calc(66% - 30px);
+                }
+                &:nth-of-type(2){
+                    width: calc(33% - 30px);
+                }
+            }
+        }
+    }
+    &._grid-fluid{
+        max-width: 100%;
+    }
+    @media(min-width: $tablet){
+        width: calc(100% - 60px);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    @media(min-width: $laptop){
+        width: calc(100% - 80px);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+}

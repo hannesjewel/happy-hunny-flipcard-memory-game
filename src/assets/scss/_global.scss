@@ -1,0 +1,20 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+strong{
+    font-weight: bold;
+}

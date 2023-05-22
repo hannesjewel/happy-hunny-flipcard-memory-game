@@ -1,0 +1,18 @@
+._card{
+    background-color: yellow;
+    img{
+        max-width: 100%;
+        opacity: 0;
+    }
+    &.is-flipped {
+        img{
+            opacity: 1;
+        }
+        
+    }
+    &.is-inactive {
+        img{
+            opacity: .5;
+        }
+    }
+}

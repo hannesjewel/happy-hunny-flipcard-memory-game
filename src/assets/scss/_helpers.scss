@@ -1,0 +1,13 @@
+._mobile{
+    display: block;
+    @media(min-width: $laptop){
+        display: none;
+    }
+}
+
+._widescreen{
+    display: none;
+    @media(min-width: $laptop){
+        display: block;
+    }
+}
